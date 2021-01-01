@@ -30,6 +30,29 @@ def create():
 
 
 
+
+#Finds corresponding value of entered key if ttl has not expired
+def read():
+
+    #assigning entered key
+    st1=r_key.get()
+
+    #Giving corresponding value of entered key
+    try:
+        val = crd.crd().read(st1)
+
+        l = Label(root, text=val,width=22)
+        l.grid(row=20, column=1)
+    except Exception as e:
+        l = Label(root, text=e.args[0],width=22)
+        l.grid(row=20, column=1)
+
+
+
+
+
+
+
 #GUI Window to Create, Read & Delete
 
 #Create Section of GUI
