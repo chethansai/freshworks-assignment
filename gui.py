@@ -83,3 +83,23 @@ r_key.grid(row=16,column=1)
 #Submit Button
 r_button=Button(root,text="Submit",command=read)
 r_button.grid(row=18,column=1)
+
+
+
+
+#Delete Section of GUI
+#Delete Label
+d_label = Label(root, text="DELETE")
+d_label.grid(row=26,column=1)
+
+#Key Label
+d_key_l = Label(root, text="Key *")
+d_key_l.grid(row=28,column=0)
+
+#Key Input Box
+d_key = Entry(root,width=35)
+d_key.grid(row=28,column=1)
+
+#Submit Button
+d_button=Button(root,text="Submit",command=delete)
+d_button.grid(row=30,column=1)
