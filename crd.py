@@ -123,4 +123,40 @@ class crd:
 
             return True
 
+        # Finds corresponding value of key if ttl has not expired
+
+    def read(self, key=''):
+
+        # Checking if key is bounding to constraints
+        self.verify_key(key)
+
+        # Trigger for submission without entering key
+        if key == '':
+            raise Exception('No key was entered. Please enter the key.')
+
+        self.datalock.acquire()
+
+        if key in self.data.keys():
+            pass
+        else:
+            self.datalock.release()
+            raise Exception('No matching key was found')
+
+        ttl = self.data[key]['ttl']
+
+        if not ttl:
+            ttl = 0
+
+        # if the ttl was crossed, an error is raised
+
+        if (time.time() < ttl) or (ttl == 0):
+            self.datalock.release()
+            return json.dumps(self.data[key]['value'])
+
+
+        else:
+            self.datalock.release()
+            raise Exception("Key's Time-To-Live has expired. Cannot read value of key")
+
+
 
