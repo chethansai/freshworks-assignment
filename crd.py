@@ -33,4 +33,20 @@ class crd:
             file = open(self.filepath, 'w')
             self.data = {}
             self.ttldict = {}
-            file.close()
+            file.close()\
+
+
+    #verification of entered key to fit to constraints
+    def verify_key(self, key):
+
+        # Checking if key is a string and length of it is below 32
+        if type(key) == type(""):
+            if len(key) > 32:
+                raise Exception('Size of key is capped at 32. Entered key length is ' + str(len(key)))
+            else:
+                return True
+        else:
+            raise Exception('Entered Key value is not a string. Entered key is of type: ' + str(type(key)))
+            return False
+
+
