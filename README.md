@@ -1,5 +1,7 @@
 # freshworks-assignment
 
+# Problem Statement
+![Problem Statement](/images/Problem_Statement.png)
 ### Directory
 1. crd.py
 1. gui.py
