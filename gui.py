@@ -64,3 +64,22 @@ c_ttl.grid(row=8,column=1)
 #Submit Button
 c_button=Button(root,text="Submit",command=create)
 c_button.grid(row=10,column=1)
+
+
+
+
+#Read Section of GUI
+#Read Heading
+r_label = Label(root, text="READ")
+r_label.grid(row=14,column=1)
+
+#Key Label
+r_key_l = Label(root, text="Key *")
+r_key_l.grid(row=16,column=0)
+
+r_key = Entry(root,width=35)
+r_key.grid(row=16,column=1)
+
+#Submit Button
+r_button=Button(root,text="Submit",command=read)
+r_button.grid(row=18,column=1)
