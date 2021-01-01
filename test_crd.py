@@ -43,3 +43,18 @@ class TestCrd(unittest.TestCase):
 
         #Checking for exception for no key entered
         self.assertRaises(Exception,crd.crd().read,"")
+
+        def test_delete(self):
+            # Checking if key is deleted if present
+            val = crd.crd().delete("C")
+            self.assertEqual(val, "Key-value pair deleted")
+
+            # Checking for exception when key not present is entered
+            self.assertRaises(Exception, crd.crd().delete, "notok")
+
+            # Checking for exception when no key is entered
+            self.assertRaises(Exception, crd.crd().delete, "")
+
+
+if __name__ == '__main__':
+    unittest.main()
