@@ -160,3 +160,44 @@ class crd:
 
 
 
+    #Deletes key-value pair if key is present
+    def delete(self, key=''):
+
+        #Checking if key is bounding to constraints
+        self.verify_key(key)
+
+        #Trigger for submission without entering key
+        if key == '':
+            raise Exception('No key was entered. Please enter the key.')
+
+        self.datalock.acquire()
+
+        #Checking if entered key is present
+        if key in self.data.keys():
+            pass
+        else:
+            self.datalock.release()
+            raise Exception('No matching key was found')
+
+        ttl = self.data[key]['ttl']
+        if not ttl:
+            ttl = 0
+
+        if time.time() < ttl or (ttl is 0):
+
+            self.data.pop(key)
+
+            self.filelock.acquire()
+            file = open(self.filepath, 'w')
+            json.dump(self.data, file)
+
+            self.filelock.release()
+            self.datalock.release()
+
+            return "Key-value pair deleted"
+        else:
+            self.datalock.release()
+            raise Exception("Key's Time-To-Live has expired. Cannot delete!!")
+
+
+
