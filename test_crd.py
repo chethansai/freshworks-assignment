@@ -31,3 +31,15 @@ class TestCrd(unittest.TestCase):
 
         #Checking for file size limited to 1 gb
         self.assertEqual(crd.crd().check_file_size(),True)
+
+   def test_read(self):
+
+        #Checking if key corresponds to right value as inserted before
+        val=crd.crd().read("B")
+        self.assertEqual(val,'"66"')
+
+        #Checking for exception for a key not inserted
+        self.assertRaises(Exception,crd.crd().read,"G")
+
+        #Checking for exception for no key entered
+        self.assertRaises(Exception,crd.crd().read,"")
