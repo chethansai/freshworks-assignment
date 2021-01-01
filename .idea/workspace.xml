@@ -10,7 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="609de8fa-d11a-4411-a160-5e548a422984" name="Default Changelist" comment="" />
+    <list default="true" id="609de8fa-d11a-4411-a160-5e548a422984" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crd.py" beforeDir="false" afterPath="$PROJECT_DIR$/crd.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609459460379</updated>
-      <workItem from="1609459461834" duration="750000" />
+      <workItem from="1609459461834" duration="1215000" />
     </task>
     <servers />
   </component>
