@@ -32,7 +32,8 @@ class TestCrd(unittest.TestCase):
         #Checking for file size limited to 1 gb
         self.assertEqual(crd.crd().check_file_size(),True)
 
-   def test_read(self):
+
+    def test_read(self):
 
         #Checking if key corresponds to right value as inserted before
         val=crd.crd().read("B")
@@ -44,17 +45,17 @@ class TestCrd(unittest.TestCase):
         #Checking for exception for no key entered
         self.assertRaises(Exception,crd.crd().read,"")
 
-        def test_delete(self):
-            # Checking if key is deleted if present
-            val = crd.crd().delete("C")
-            self.assertEqual(val, "Key-value pair deleted")
+    def test_delete(self):
 
-            # Checking for exception when key not present is entered
-            self.assertRaises(Exception, crd.crd().delete, "notok")
+        # Checking if key is deleted if present
+        val = crd.crd().delete("C")
+        self.assertEqual(val, "Key-value pair deleted")
 
-            # Checking for exception when no key is entered
-            self.assertRaises(Exception, crd.crd().delete, "")
+        #Checking for exception when key not present is entered
+        self.assertRaises(Exception,crd.crd().delete,"notok")
 
+        #Checking for exception when no key is entered
+        self.assertRaises(Exception,crd.crd().delete,"")
 
 if __name__ == '__main__':
     unittest.main()
