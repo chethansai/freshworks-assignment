@@ -13,7 +13,8 @@ test_crd.py | Contains unit tescases to test validity of Create, Read & Delete f
 
 
 ### Languages and Tools:
-[<img align="left" alt="pycharm | Pycharm " width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/1024px-PyCharm_Logo.svg.png" />][Pycharm]
+[<img align="left" alt="pycharm | Pycharm " width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PyCharm_Logo.svg/1024px-PyCharm_Logo.svg.png" />]
+[<img align="left" alt="python | Python " width="22px" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />]
 
 <br>
 ###Steps to run project
