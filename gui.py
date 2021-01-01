@@ -48,6 +48,22 @@ def read():
         l.grid(row=20, column=1)
 
 
+#Deleting key-value pair of entered key
+def delete():
+
+    #Assigning entered key
+    st1=d_key.get()
+
+    #deleting key-value pair
+    try:
+        val= crd.crd().delete(st1)
+        l = Label(root, text=val,width=22)
+        l.grid(row=32, column=1)
+    except Exception as e:
+        l = Label(root, text=e.args[0],width=22)
+        l.grid(row=32, column=1)
+
+
 
 
 
