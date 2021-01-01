@@ -103,3 +103,10 @@ d_key.grid(row=28,column=1)
 #Submit Button
 d_button=Button(root,text="Submit",command=delete)
 d_button.grid(row=30,column=1)
+
+
+
+#Size and Title of window
+root.geometry("450x450")
+root.title("FreshWorks Assignment CRD")
+root.mainloop()
