@@ -50,3 +50,16 @@ class crd:
             return False
 
 
+
+    #Checking if the file size is below 1 GB
+    def check_file_size(self):
+
+        self.filelock.acquire()
+
+        if os.path.getsize(self.filepath) <= 1e+9:
+            self.filelock.release()
+            return True
+        else:
+            self.filelock.release()
+            return False
+
