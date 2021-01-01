@@ -43,6 +43,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Git Hub\freshworks-assignment\images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.gui">
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="freshworks-assignment" />
@@ -146,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609459460379</updated>
-      <workItem from="1609459461834" duration="5990000" />
+      <workItem from="1609459461834" duration="6574000" />
     </task>
     <servers />
   </component>
@@ -165,22 +170,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1609469533457">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1609469757785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609469533457" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1609469533456">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609469757785" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1609469757785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609469533456" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1609469533456">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609469757785" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1609469757785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609469533456" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1609469533457">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609469757785" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1609469757785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609469533457" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609469757785" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/freshworks_assignment$Unittests_for_test_crd_TestCrd_test_delete.coverage" NAME="Unittests for test_crd.TestCrd.test_delete Coverage Results" MODIFIED="1609467807394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
