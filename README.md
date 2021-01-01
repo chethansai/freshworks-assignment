@@ -25,3 +25,5 @@ test_crd.py | Contains unit tescases to test validity of Create, Read & Delete f
 
 ### GUI Window
 ![GUI Window](/images/GUI_Window.png)
+
+* Find the demo video in repository *
